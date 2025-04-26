@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Инвестиционный проект: Апартаменты в Апно (Словения)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS 2.2.19 -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Google Fonts: Manrope -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- AOS Animation -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Manrope', Arial, sans-serif; background:#f1f3f5; color:#2c2e30; }
+    h1, h2, h3, h4 { font-family: 'Manrope', Arial, sans-serif; }
+    h1 { font-size:2.2rem; font-weight:800; letter-spacing:-1px; }
+    h2 { font-size:1.4rem; font-weight:700; margin-bottom:1rem;}
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 6px 36px 0 rgba(46,62,72,.09);
+      padding:2.2rem 2rem 2rem 2rem;
+      margin-bottom:2.8rem;
+      position:relative;
+    }
+    .gallery-img { border-radius: 16px; object-fit: cover; width:100%; height:282px;}
+    .gallery-thumb { transition:transform .18s; }
+    .gallery-thumb:hover { transform:scale(1.07);}
+    .desc-block { margin-bottom:2rem;}
+    table { width:100%; border-collapse:collapse; margin:1.5rem 0; }
+    th, td { border-bottom:1px solid #e4e4e4; padding:.66rem 1rem; text-align:left;}
+    th { background:#f6f6fa; font-weight:600; }
+    ul { list-style-type: disc; margin-left:1.5rem;}
+    .accent { color: #1362ce; font-weight: 600;}
+    a, .text-blue { color: #227be3; text-decoration:underline; }
+    a:hover,.text-blue:hover { color: #183e86;}
+    .feature-list li {margin-bottom:.6rem;}
+    .block-title {font-size:1.3rem; font-weight:700; margin-bottom:.8rem;}
+    .price-tag { color: #fff; background: #1667cf; padding: .25em .85em; border-radius: 18px; font-weight:700;}
+    .shadow-card { box-shadow: 0 6px 30px 0 rgba(56,72,92,.05);}
+    .card-image-descr {margin-top:0.6rem;font-size:.97rem;color:#686f7a;}
+    /* Map Block */
+    .map-block { border-radius: 18px; overflow:hidden; margin-bottom:2.2rem; box-shadow: 0 6px 36px 0 rgba(56,72,92,.08);}
+    /* Gallery scroll - hide scrollbar on PDF/export */
+    .gallery-scroll {scrollbar-width:none;}
+    .gallery-scroll::-webkit-scrollbar {display:none;}
+    @media (max-width:1023px){
+      .gallery-img { height:160px;}
+      .card { padding:1.4rem 1rem 1.8rem 1rem;}
+    }
+    @media (max-width:640px){
+      .gallery-img { height:90px;}
+      h1 { font-size:1.7rem;}
+      .card {padding:1rem;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="max-w-5xl mx-auto px-2 sm:px-6 mt-10">
+    <div class="card shadow-card" data-aos="fade-down">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-2/3 w-full mb-6 md:mb-0">
+          <h1 class="mb-2">
+            <span class="accent">Инвестиционный проект:</span><br>Апартаменты в Апно (Словения)
+          </h1>
+          <div class="text-lg text-gray-700 mb-3" style="max-width:540px;">Премиальное предложение для инвесторов — туристические апартаменты у горнолыжного курорта <b>Крвавец</b>.</div>
+          <div class="text-xl"><span class="price-tag">Цена проекта: 55 000&nbsp;€</span></div>
+        </div>
+        <div class="md:w-1/3 w-full flex md:justify-end justify-start mt-2 sm:mt-0">
+          <a href="#details" class="px-7 py-3 bg-blue-700 text-white rounded-lg text-base font-semibold shadow transition hover:bg-blue-800" style="background:#1d4ed8;">Запросить подробности</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Gallery -->
+  <div class="max-w-5xl mx-auto px-2 gallery-scroll" style="overflow-x:auto;">
+    <div class="flex space-x-4 pb-1" style="min-width:768px;" data-aos="fade-up">
+      <img src="https://raw.githubusercontent.com/Miragconsulting/Images/main/bistrica1.jpg" alt="Фото участка 1" class="gallery-img gallery-thumb" style="min-width:230px; max-width:320px;">
+      <img src="https://raw.githubusercontent.com/Miragconsulting/Images/main/bistrica5.jpg" alt="Фото участка 2" class="gallery-img gallery-thumb">
+      <img src="https://raw.githubusercontent.com/Miragconsulting/Images/main/bistrica2.jpg" alt="Фото участка 3" class="gallery-img gallery-thumb">
+    </div>
+  </div>
+
+  <!-- Контент о проекте -->
+  <div class="max-w-4xl mx-auto mt-7 px-2">
+    <!-- Раздел: Описание проекта -->
+    <div class="card" id="details" data-aos="fade-up">
+      <h2 class="block-title mb-1 accent">Общая информация об объекте</h2>
+      <div class="desc-block">
+        <ul class="feature-list text-base mb-3 ml-6">
+          <li><b>Адрес:</b> Апно, Cerklje na Gorenjskem, Словения</li>
+          <li><b>Площадь участка:</b> <span class="accent">799 м²</span>, из них <span class="accent">550 м²</span> под застройку (остальное — лес)</li>
+          <li><b>Расположение:</b> Южный, хорошо освещённый склон у границы населённого пункта; над дорогой Cerklje-Kamnik; по участку проходит электричество, остальные коммуникации&nbsp;— по границе</li>
+          <li><b>Зонирование:</b> SSc — разрешена жилая и смешанная (коммерческая, сервисная) застройка</li>
+        </ul>
+        <h3 class="mb-1 mt-6 accent">Юридические и градостроительные параметры</h3>
+        <ul class="feature-list ml-6">
+          <li><b>В 2011 году</b> было получено разрешение на строительство <b>2-квартирного дома (дуплекс</b>, 3 этажа, 17×8 м, с цокольной парковкой и гаражом на 4 места), но разрешение <i>истекло из-за отсутствия рабочей активности</i>. Восстановление разрешения возможно: все документы и утверждённый проект в наличии.</li>
+        </ul>
+        <ul class="feature-list ml-6 mt-3">
+          <li>Допускается: строительство одно- или двухквартирного дома, гостиничной мини-базы (гестхаус), объектов под сдачу тур-апартаментов</li>
+          <li>Можно комбинировать жильё и гостевой сервис, небольшие офисы, сервис и точечную торговлю (до 50% площади)</li>
+          <li>Форма застройки: прямоугольник не менее 1:1.5; допустимо строить до 3-х уровней (подвал/цоколь+1-2 надземных); крыша с уклоном 35-45°</li>
+          <li>Плотность застройки: максимум 35% площади участка; не менее 30% — озеленение</li>
+        </ul>
+        <div class="desc-block mt-4">
+          <strong>Ключевые преимущества:</strong>
+          <ul class="ml-7 mt-1">
+            <li>Участок полностью готов под получение нового разрешения — экономия времени и рисков для инвесторов</li>
+            <li>Коммуникации доступны у границы участка и в населенном пункте</li>
+            <li>Панорамный вид на Альпы, отличная инсоляция и транспортная связность (до трассы 12 мин)</li>
+            <li>Уникальная возможность реализовать гибкую концепцию: как семейный duplex, так и комплекс апартаментов под туризм</li>
+            <li>Высокая ликвидность: район Крвавца один из лидеров по инвестициям в аренду и коттеджный туризм Словении</li>
+          </ul>
+        </div>
+        <div class="flex flex-wrap space-x-8 text-sm mt-6">
+          <div><i class="fas fa-car accent mr-2"></i>Cerklje — 7 мин</div>
+          <div><i class="fas fa-train accent mr-2"></i>Шенчур (автомагистраль) — 12 мин</div>
+          <div><i class="fas fa-road accent mr-2"></i>Крань — 20 мин</div>
+          <div><i class="fas fa-tree accent mr-2"></i>Камник — 18 мин</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Карта расположения -->
+    <div class="card map-block" data-aos="fade-up">
+      <h2 class="block-title mb-1 accent">Карта местоположения</h2>
+      <iframe width="100%" height="340" style="border:0;border-radius:18px;" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCVDV3tm8GLlEOMqPRGYkEje0cm4WHdUeg&q=Apno,+Cerklje+na+Gorenjskem,+Slovenia">
+      </iframe>
+    </div>
+
+    <!-- Фотографии достопримечательностей -->
+    <div class="card" data-aos="fade-up">
+      <h2 class="block-title accent mb-5">Ключевые достопримечательности региона</h2>
+      <div class="grid sm:grid-cols-3 gap-6">
+        <div>
+          <img src="https://raw.githubusercontent.com/Miragconsulting/Images/main/krvavec.jpg" class="gallery-img" alt="Крвавец">
+          <div class="card-image-descr">Горнолыжный курорт Крвавец &mdash; <span class="accent">2-й по объему гостей</span> горнолыжный центр Словении, 30 км трасс.</div>
+        </div>
+        <div>
+          <img src="https://raw.githubusercontent.com/Miragconsulting/Images/main/bled.jpg?auto=format&fit=crop&w=440&q=80" class="gallery-img" alt="Озеро Блед">
+          <div class="card-image-descr">Озеро Блед — <span class="accent">главное природное чудо</span> и икона Словении, 35 мин от участка.</div>
+        </div>
+        <div>
+          <img src="https://raw.githubusercontent.com/Miragconsulting/Images/main/logarska.jpg" class="gallery-img" alt="Логарская долина">
+          <div class="card-image-descr">Логарская долина — <span class="accent">7 км</span> великолепных видов и рафтинг, 1 час.</div>
+        </div>
+        <div>
+          <img src="https://raw.githubusercontent.com/Miragconsulting/Images/main/alps.jpg?auto=format&fit=crop&w=440&q=80"
+               class="gallery-img" alt="Камнишко-Савиньские Альпы">
+          <div class="card-image-descr">Камнишко-Савиньские Альпы: хайкинг, скалолазание, природная долина Камник.</div>
+        </div>
+        <div>
+          <img src="https://raw.githubusercontent.com/Miragconsulting/Images/main/termal.jpg" class="gallery-img" alt="Термальные курорты">
+          <div class="card-image-descr">Лучшие термальные курорты Словении: отдых, восстановление и велнес SPA.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Инвестиционные расчеты -->
+    <div class="card mt-6 shadow-card" data-aos="fade-up">
+      <h2 class="block-title accent">Инвестиционные расчеты и показатели</h2>
+      <div class="md:grid grid-cols-2 gap-10">
+        <div>
+          <h3 class="mb-2 font-semibold">Вариант 1. Продажа</h3>
+          <ul class="feature-list ml-5">
+            <li>Площадь застройки: до <b>250 м²</b></li>
+            <li>Строительство: <b>1000 €/м²</b> = <span class="accent">250 000 €</span></li>
+            <li>Сопутствующие расходы (оформление, связь, налоги): <b>25 000 €</b></li>
+            <li>Итого вложения: <span class="accent">55 000 €</span> (участок) + 250 000 € = <b>305 000 €</b></li>
+            <li>Ожидаемая цена продажи (2500 €/м²): <span class="accent">625 000 €</span></li>
+            <li>Ожидаемая прибыль: <b>~320 000 €</b></li>
+            <li>Рентабельность (ROI): <b>105%</b></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="mb-2 font-semibold">Вариант 2. Туристическая аренда</h3>
+          <ul class="feature-list ml-5">
+            <li>Средняя ставка: <b>120 €/сутки</b> (2 апартамента × 60 €)</li>
+            <li>Сезонная загрузка (180 дней): <span class="accent">21 600 €</span></li>
+            <li>Годовая загрузка: <b>32 000 €</b> (учет низкого сезона)</li>
+            <li>Текущие расходы: 17% (обслуживание, реклама, налог)</li>
+            <li>Чистый доход: <b>~26 500 € / год</b></li>
+            <li>Окупаемость: <b>~11,5 лет</b> (быстрее при высокой загрузке)</li>
+            <li>Капитализация: стабильный рост стоимости активов в 2025-2030 гг на 3-4% в год</li>
+          </ul>
+        </div>
+      </div>
+      <table class="mt-7 text-base">
+        <tr>
+          <th>Показатель</th>
+          <th>Значение</th>
+        </tr>
+        <tr>
+          <td>Рентабельность (продажа, год)</td>
+          <td>~105%</td>
+        </tr>
+        <tr>
+          <td>Окупаемость аренды</td>
+          <td>~11,5 лет</td>
+        </tr>
+        <tr>
+          <td>Годовой чистый доход (аренда)</td>
+          <td>~26 500 €</td>
+        </tr>
+        <tr>
+          <td>NPV (10 лет аренда, 4% рост)</td>
+          <td>434 000 € (+капитал)</td>
+        </tr>
+      </table>
+    </div>
+    <!-- Бизнес план и преимущества -->
+    <div class="card mt-6 shadow-card" data-aos="fade-up">
+      <h2 class="block-title accent mb-1">Бизнес-план и преимущества инвестирования</h2>
+      <ul class="feature-list ml-5 mb-4">
+        <li>Гибкость: реализуйте проект как жилой дом, семейный дуплекс или комплекс апартаментов</li>
+        <li>Возможность вести и сдавать бизнес дистанционно (через сервисные фирмы, платформы бронирования)</li>
+        <li>Участок уникален по расположению (солнечный, с видом), юридически и инфраструктурно полностью подготовлен к быстрым вложениям</li>
+        <li>Возможен быстрый возврат капитала через схему build-sell или за счет сдачи в аренду туристам в одном из топовых регионов Словении</li>
+        <li>Туристический поток – гарант ликвидности: зимний спорт, летний велнес, экскурсии на уикенд со всего Евросоюза</li>
+        <li>Ваши вложения в этот проект — комбинация защиты капитала и высокой доходности</li>
+      </ul>
+      <div class="desc-block">
+        <b>Прогноз темпов роста стоимости недвижимости в регионе</b> — 4-5% в год, нет переизбытка предложения, критически низкий ввод новых площадей в горах.
+      </div>
+    </div>
+  </div>
+
+  <!-- AOS Animation Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true, duration: 800, offset: 80 });
+  </script>
+</body>
+</html>
+
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDklQKOjqYRduJ0juy%2BfQ%2F%2FIK2txrqLRBdBw%2BS7%2BWubcH1uu%2FIhM0Fvt3%2FSJc96z70n5%2FxtkFW0byNfjwBxR4zOYWbF26H6vsuq0o6TI6WyF5kFGh5bzTO2bDpWkuUkmMz9tSZgNDQZpHe2q9sWo7c3TEQp3Oyj4mVDhRnIo1tcGfvCNjcIWnJv9b3g0l2N%2BNfylHSae6HN5pR%2F9u2F0DeIgLRXyrk%2FKHlkR%2B24lNkgtql4foxVZcmdBJHUUmtFrnAD4UAEB7E8nd4jhndI6VeucMjpWvOaliaY82llikjVNyHbNxD5rF15vnwBSKE4wnGEqihSQvytOa13NJmB2FWEl9Go7WHP479R3e1kDKjCUtaPG4rW4rjQZsHjlLSZbGvgjViYsPxZyxYRtU9GZ872wBEMnrMUekBi3jceZhXjoMXzKHd1k%2B5Kqv7CINT5da1xU57Hrq%2BrIAQy7AKZakwMmS07%2B5wCX%2Be3oyDOA3RnKNhG2eCYM%2BTQpRAjeh7ahk6RFCy6yL76mXFOODZjFjua8%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDklQKOjqYRduJ0juy+fQ//IK2txrqLRBdBw+S7+WubcH1uu/IhM0Fvt3/SJc96z70n5/xtkFW0byNfjwBxR4zOYWbF26H6vsuq0o6TI6WyF5kFGh5bzTO2bDpWkuUkmMz9tSZgNDQZpHe2q9sWo7c3TEQp3Oyj4mVDhRnIo1tcGfvCNjcIWnJv9b3g0l2N+NfylHSae6HN5pR/9u2F0DeIgLRXyrk/KHlkR+24lNkgtql4foxVZcmdBJHUUmtFrnAD4UAEB7E8nd4jhndI6VeucMjpWvOaliaY82llikjVNyHbNxD5rF15vnwBSKE4wnGEqihSQvytOa13NJmB2FWEl9Go7WHP479R3e1kDKjCUtaPG4rW4rjQZsHjlLSZbGvgjViYsPxZyxYRtU9GZ872wBEMnrMUekBi3jceZhXjoMXzKHd1k+5Kqv7CINT5da1xU57Hrq+rIAQy7AKZakwMmS07+5wCX+e3oyDOA3RnKNhG2eCYM+TQpRAjeh7ahk6RFCy6yL76mXFOODZjFjua8=";
+    </script>
+    
